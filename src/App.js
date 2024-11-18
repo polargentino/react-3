@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import Header from './components/Header';
+import Profile from './components/Profile';
+import Experience from './components/Experience';
+import Education from './components/Education';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import Switch from './components/Switch';
+import ImageGallery from './components/ImageGallery'; // Importa la galería de imágenes
+//import VideoGrid from './components/VideoGrid';
 
-function App() {
+
+// Importa aquí los otros componentes
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Switch /> 
+      <Profile />
+      <Experience />
+      <Education />
+      <Skills />
+      <Contact /> 
+       {/* Contenedor para la galería de imágenes y la cuadrícula de videos */}
+       <div style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
+        <ImageGallery />
+        {/*<VideoGrid />*/}
+      </div>
+       {/* Añade aquí los otros componentes, como Profile, Experience, Skills, etc. */}
+      
     </div>
   );
-}
+};
 
 export default App;
+
