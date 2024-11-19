@@ -11,7 +11,7 @@ const Contact = () => {
       <Divider />
       
       <Typography variant="body1" mt={2} mb={2}>
-        Gracias.
+        Gracias por tomarse el tiempo. Me comunicaré a la brevedad
       </Typography>
 
       <form
